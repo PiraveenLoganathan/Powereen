@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Powereen - Sustainable Innovations</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- FULL-WIDTH HEADER -->
+  <header id="header">
+    <div class="header-container">
+      <div class="logo">
+        <a href="#home"><img src="powereen-logo.png" alt="Powereen Logo"></a>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#solutions" class="nav-link">Solutions</a></li>
+          <li><a href="#impact" class="nav-link">Impact</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION with Video Background -->
+  <section id="home" class="hero-section fade-in-onload">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="herovid.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <div class="hero-logo">
+        <img src="powereen-logo.png" alt="Powereen Logo">
+      </div>
+      <h2 class="hero-tagline">Transforming Agricultural Waste into Renewable Energy</h2>
+      <a href="#solutions" class="btn btn-primary">Explore Our Solutions</a>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section fade-in">
+    <div class="container">
+      <h2 class="section-title">About Powereen</h2>
+      <p class="section-text">
+        Powereen is dedicated to harnessing the power of agricultural waste to produce clean, renewable energy.
+        Our cutting-edge research and eco-friendly practices reduce carbon emissions while fostering sustainable growth in local communities.
+      </p>
+    </div>
+  </section>
+
+  <!-- SOLUTIONS SECTION with Background Video -->
+  <section id="solutions" class="section solutions-section fade-in">
+    <video autoplay muted loop playsinline class="solutions-video">
+      <source src="solutions.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="solutions-overlay"></div>
+    <div class="solutions-content container">
+      <h2 class="section-title">Our Solutions</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Research</h3>
+          <p>Gather and analyze agricultural waste sources to develop efficient conversion methods.</p>
+        </div>
+        <div class="card">
+          <h3>Production</h3>
+          <p>Utilize advanced technology to transform waste into reliable, clean energy.</p>
+        </div>
+        <div class="card">
+          <h3>Distribution</h3>
+          <p>Deliver renewable energy to local grids, fueling sustainable growth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT SECTION with a Smaller Project Progress Dropdown -->
+  <section id="impact" class="section fade-in">
+    <div class="container">
+      <h2 class="section-title">Our Impact</h2>
+      <p class="section-text">
+        By converting agricultural waste into energy, Powereen reduces carbon footprints, empowers farmers,
+        and accelerates the shift to a greener economy.
+      </p>
+      <!-- Button to toggle progress dropdown -->
+      <button id="toggleProgress" class="btn btn-primary">Project Progress</button>
+      <!-- Dropdown content for progress (smaller height, no video) -->
+      <div id="progressDropdown" class="dropdown-content">
+        <div class="progress-content">
+          <div class="progress-container">
+            <div class="progress-bar">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+          </div>
+          <p class="section-text" id="phaseText"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION with Background Video -->
+  <section id="contact" class="section fade-in">
+    <!-- Background Video for Contact -->
+    <video autoplay muted loop playsinline class="contact-video">
+      <source src="contact.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="contact-overlay"></div>
+    <div class="contact-content container">
+      <h2 class="section-title">Get in Touch</h2>
+      <div class="contact-form">
+        <form action="mailto:info@powereen.com" method="post" enctype="text/plain">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn-secondary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Powereen. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
